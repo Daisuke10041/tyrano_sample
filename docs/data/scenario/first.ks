@@ -1,23 +1,26 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="PopulationQuiz"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「人口クイズ!」[l][r]
 
-メロスは激怒した。[l][r]
+これから人口に関するクイズを出します。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+不正解するとその瞬間にゲームオーバーです。[l][r]
 
-(中略)[l][r]
+全ての問題に正解するとどうなるかな？[l][r]　
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+さっそくですが、問題を出題します。[l][r]
+
+第一問[l][r]
 
 [link target=*tag_sleep] →寝る [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
+[link target=*tag_walk] →歩く [endlink][r]
+[link target=*tag_shout] → 叫ぶ[endlink][r]
 [s]
 
 *tag_sleep
@@ -44,3 +47,29 @@
 【 GOOD END 】[l][cm]
 
 [jump target=*start]
+
+*tag_walk
+
+[cm]
+
+[bg storage=バンド図書き込み.png time=500]
+
+メロスは歩きまくった。[l][r]
+勇者は、死んだ。[r]
+
+【 よくわからない END 】[l][cm]
+
+[jump target=*start]
+
+*tag_shout
+
+[bg storage=バンド図書き込み.png time=500]
+
+[cm]
+
+メロスは叫んだ[1][r]
+
+happy　エンド　[l][cm]
+
+[jump target=*start]
+
